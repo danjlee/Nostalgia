@@ -1,6 +1,6 @@
 import "./styles/index.scss"
-import Player from './bunny';
-import Game from './game';
+import Player from './scripts/bunny';
+import Game from './scripts/game';
 
 document.addEventListener("DOMContentLoaded", () => {
     var canvas = document.getElementById("canvas");
