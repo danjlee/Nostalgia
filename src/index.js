@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let player = new Player(ctx, canvas);
     let game = new Game(ctx, canvas, player);
+
     window.requestAnimationFrame(game.render);
 
     window.onkeydown = function (e) {
