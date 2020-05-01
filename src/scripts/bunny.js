@@ -70,16 +70,16 @@ class Player {
     const ctx = this.ctx;
 
     let idleRight = new Image();
-    idleRight.src = "./assets/images/idle-right.png";
+    idleRight.src = "./src/assets/images/idle-right.png";
 
     let idleLeft = new Image();
-    idleLeft.src = "./assets/images/idle-left.png";
+    idleLeft.src = "./src/assets/images/idle-left.png";
 
     let moveRight = new Image();
-    moveRight.src = "./assets/images/move-right.png";
+    moveRight.src = "./src/assets/images/move-right.png";
 
     let moveLeft = new Image();
-    moveLeft.src = "./assets/images/move-left.png";
+    moveLeft.src = "./src/assets/images/move-left.png";
 
 
     if (this.playerStatus === "idleRight") {
