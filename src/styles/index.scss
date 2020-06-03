@@ -46,13 +46,54 @@ body {
 }
 
 .footer {
-    width: 800px;
-    height: 120px;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+}
+
+.personal {
+    margin-right: 20px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
+}
+
+.personal:hover {
+    opacity: 1;
+}
+
+.linkedin {
+    margin-right: 20px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
+}
+
+.linkedin:hover {
+    opacity: 1;
+}
+
+.github {
+    margin-right: 20px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
+}
+
+.github:hover {
+    opacity: 1;
+}
+
+.angellist {
+    margin-right: 20px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
+}
+
+.angellist:hover {
+    opacity: 1;
 }
 
 .instructions > * {
@@ -62,12 +103,12 @@ body {
     list-style-type: none;
 }
 
-.instructions > ul {
+.instructions {
     
 }
 
 .instructions > ul > li {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .instructions > ul > li:hover {

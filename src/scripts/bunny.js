@@ -27,6 +27,7 @@ class Player {
 
     this.draw = this.draw.bind(this);
   }
+  
   keyDownHandler(e) {
     if (this.moveable === 1) {
       if (e.key == "Right" || e.key == "ArrowRight") {

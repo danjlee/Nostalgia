@@ -1,5 +1,5 @@
 class Game {
-    constructor(ctx, canvas, player, tile) {
+    constructor(ctx, canvas, player) {
         this.ctx = ctx;
         this.canvas = canvas;
         this.gameWidth = canvas.width;
