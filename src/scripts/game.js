@@ -12,13 +12,13 @@ class Game {
         this.platforms = [];
 
         this.player = player;
-        this.grass = new Grass(ctx, x, y);
+        this.grass = new Grass(ctx, canvas, Math.floor(Math.random() * 2));
 
         this.collide = this.collide.bind(this);
         this.render = this.render.bind(this);
     }
 
-    render () {
+    render() {
         let player = this.player;
         let grass = this.grass;
 
@@ -27,21 +27,7 @@ class Game {
         if (this.start === true) {
             player.draw();
             player.move();
-
-            if (lowest === 0) {
-                let i = 1;
-            } else {
-                let i = lowest;
-            }
-
-            for (i; i < lowest + 60; i++) {
-                if (i >= this.platforms.length) {
-                    this.platforms.push(grass);
-
-                    this.platforms[i].x = Math.random()*(this.canvas.width - this.platforms)
-                }
-            }
-            this.platforms[i].draw();
+            grass.draw();
         }
 
         window.requestAnimationFrame(this.render);
