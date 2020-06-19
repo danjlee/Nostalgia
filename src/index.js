@@ -1,8 +1,6 @@
 import "./styles/index.scss"
 import Player from './scripts/bunny';
 import Game from './scripts/game';
-import Spawn from './scripts/spawn';
-
 
 document.addEventListener("DOMContentLoaded", () => {
     var canvas = document.getElementById("canvas");
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let player = new Player(ctx, canvas);
     let game = new Game(ctx, canvas, player);
-    let spawn = new Spawn(ctx, canvas);
 
     window.requestAnimationFrame(game.render);
 
@@ -26,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         game.start = true;
         player.moveable = 1;
         game.render();
-        spawn.draw();
 
         if (game.sound === true) {
             music.play();
